@@ -1,1 +1,182 @@
-@CHARSET "UTF-8";
+/**
+ * Calendar module CSS
+ */
+
+div#calendarWrapper {
+	margin: 0 auto;
+}
+
+div#calendarHeader {
+	width: 678px;
+	display: block;
+	text-align: center;
+	background: #EEF5FC;
+	border-left: 1px solid #CCCCCC;
+	border-right: 1px solid #CCCCCC;
+	border-top: 1px solid #CCCCCC;
+	padding: 10px;
+	overflow: hidden;
+}
+
+div#calendarBody {
+	float: left;
+	width: 698px;
+	border: 1px solid #CCCCCC;
+	overflow: hidden;
+}
+
+table#calendarTable {
+	width: 100%;
+	border-collapse: collapse;
+	overflow: hidden;
+}
+
+table#calendarTable td {
+	width: 94px;
+	height: 94px;
+	border: 1px solid #CCCCCC;
+	color: #9E400E;
+	font-family: Arial, Tahoma;
+	font-size: 12px;
+	padding: 3px;
+}
+
+table#calendarTable td.first {/* cell at beginning of row */
+	border-left: 0;
+}
+
+table#calendarTable td.last {/* cell at end of row */
+	border-right: 0;
+}
+
+table#calendarTable td.bottom {/* cell in last row */
+	border-bottom: 0;
+}
+
+table#calendarTable tr.weekdays td {
+	border-top: 0;
+	height: auto !important;
+	background: #F7F7F7;
+	font-weight: bold;
+	font-size: 13px;
+	color: #333333;
+	padding: 3px;
+}
+
+table#calendarTable tr.weekdays td.first {/* cell at beginning of row */
+	border-left: 0;
+}
+
+table#calendarTable tr.weekdays td.last {/* cell at end of row */
+	border-right: 0;
+}
+
+table#calendarTable td.today {/* cell that is today */
+	background: #F4F4F4;
+}
+
+/**
+ * Month Scroller CSS (jCarousel)
+ */
+
+ul#monthCarousel li#selected-month {
+	font-weight: bold;
+	font-size: 13px;
+}
+
+.jcarousel-skin-custom .jcarousel-container {
+}
+
+.jcarousel-skin-custom .jcarousel-direction-rtl {
+	direction: rtl;
+}
+
+.jcarousel-skin-custom .jcarousel-container-horizontal {
+	width: 638px;
+	padding: 0px 20px;
+}
+
+.jcarousel-skin-custom .jcarousel-clip-horizontal {
+	width: 642px;
+}
+
+.jcarousel-skin-custom .jcarousel-item {
+	width: 226px;
+}
+
+.jcarousel-skin-custom .jcarousel-item-horizontal {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.jcarousel-skin-custom .jcarousel-direction-rtl .jcarousel-item-horizontal {
+	margin-left: 10px;
+	margin-right: 0;
+}
+
+.jcarousel-skin-custom .jcarousel-item-placeholder {
+	background: #fff;
+	color: #000;
+}
+
+.jcarousel-skin-custom .jcarousel-next-horizontal {
+	position: absolute;
+	top: 0px;
+	right: 5px;
+	width: 18px;
+	height: 18px;
+	cursor: pointer;
+	background: transparent url(images/next.png) no-repeat 0 0;
+}
+
+.jcarousel-skin-custom .jcarousel-direction-rtl .jcarousel-next-horizontal {
+	left: 5px;
+	right: auto;
+	background-image: url(images/prev.png);
+}
+
+.jcarousel-skin-custom .jcarousel-next-horizontal:hover {
+	background-position: 0 -18px;
+}
+
+.jcarousel-skin-custom .jcarousel-next-horizontal:active {
+	background-position: 0 -18px;
+}
+
+.jcarousel-skin-custom .jcarousel-next-disabled-horizontal,
+.jcarousel-skin-custom .jcarousel-next-disabled-horizontal:hover,
+.jcarousel-skin-custom .jcarousel-next-disabled-horizontal:active {
+	cursor: default;
+	background-position: 0 -36px;
+}
+
+.jcarousel-skin-custom .jcarousel-prev-horizontal {
+	position: absolute;
+	top: 0px;
+	left: 5px;
+	width: 18px;
+	height: 18px;
+	cursor: pointer;
+	background: transparent url(images/prev.png) no-repeat 0 0;
+}
+
+.jcarousel-skin-custom .jcarousel-direction-rtl .jcarousel-prev-horizontal {
+	left: auto;
+	right: 5px;
+	background-image: url(images/next.png);
+}
+
+.jcarousel-skin-custom .jcarousel-prev-horizontal:hover {
+	background-position: 0 -18px;
+}
+
+.jcarousel-skin-custom .jcarousel-prev-horizontal:active {
+	background-position: 0 -18px;
+}
+
+.jcarousel-skin-custom .jcarousel-prev-disabled-horizontal,
+.jcarousel-skin-custom .jcarousel-prev-disabled-horizontal:hover,
+.jcarousel-skin-custom .jcarousel-prev-disabled-horizontal:active {
+	cursor: default;
+	background-position: 0 -36px;
+}
