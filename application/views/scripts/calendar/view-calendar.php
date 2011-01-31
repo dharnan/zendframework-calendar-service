@@ -13,53 +13,44 @@
                     scroll: 3,
                     visible: 3,
                     start: Math.min($('li#selected-month').index(),$('ul#monthCarousel > li').length - 1),
-                    animation: 700
+                    animation: 800
                 });
             });
         </script>
     </head>
-    <body>
-        <div id="demo-header">
-            <p>Zend Calendar Service with View</p>
-        </div>
-        <div id="demo-wrapper">            
-            <div id="calendarWrapper">
-                <div id="calendarHeader">
-                    <div id="scrollableWrapper">
-                        <ul id="monthCarousel" class="jcarousel-skin-custom">
-                            <?php foreach ($this->calHeader as $arr) : ?>
-                            <li id="<?php echo $arr['id']; ?>">
-                                <a href="<?php echo $this->url($arr['url']); ?>">
-                                    <?php echo $arr['text']; ?>
-                                </a>
-                            </li>
-                            <?php endforeach; ?>
-                        </ul>
-                    </div>
-                </div>
-                <div id="calendarBody">
-                    <table id="calendarTable" border="0" cellpadding="0" cellspacing="0">
-                        <tr class="weekdays">
-                        <?php foreach ($this->calWeekdays as $arr) : ?>
-                            <td class="<?php echo $arr['class']; ?>"><?php echo $arr['dayShortStr']; ?></td>
+    <body>                    
+    	<div id="calendarWrapper">
+        	<div id="calendarHeader">
+            	<div id="scrollableWrapper">
+                	<ul id="monthCarousel" class="jcarousel-skin-custom">
+                    	<?php foreach ($this->calHeader as $arr) : ?>
+                       	<li id="<?php echo $arr['id']; ?>">
+                        	<a href="<?php echo $this->url($arr['url']); ?>"><?php echo $arr['text']; ?></a>
+						</li>
                         <?php endforeach; ?>
-                        </tr>
-                        <?php foreach ($this->calMonthDays as $weekNum => $weekArr) : ?>
-                        <tr class="days">
-                        <?php foreach ($weekArr as $dayArr) : ?>
-                            <td class="<?php echo $dayArr['class']; ?>">
-                            <?php if (isset($dayArr['num'])) : ?>
-                                <span class="dayNum">
-                                <?php echo $dayArr['num']; ?>
-                                </span>
-                            <?php endif; ?>
-                            </td>
-                            <?php endforeach; ?>
-                        </tr>
+                    </ul>
+				</div>
+			</div>
+            <div id="calendarBody">
+            	<table id="calendarTable" border="0" cellpadding="0" cellspacing="0">
+                	<tr class="weekdays">
+                    <?php foreach ($this->calWeekdays as $arr) : ?>
+                    	<td class="<?php echo $arr['class']; ?>"><?php echo $arr['dayShortStr']; ?></td>
+					<?php endforeach; ?>
+                    </tr>
+                    <?php foreach ($this->calMonthDays as $weekNum => $weekArr) : ?>
+                    <tr class="days">
+                    <?php foreach ($weekArr as $dayArr) : ?>
+                    	<td class="<?php echo $dayArr['class']; ?>">
+                        <?php if (isset($dayArr['num'])) : ?>
+                        	<span class="dayNum"><?php echo $dayArr['num']; ?></span>
+						<?php endif; ?>
+                        </td>
                         <?php endforeach; ?>
-                    </table>
-                </div>
-            </div>
-        </div>
+					</tr>
+                    <?php endforeach; ?>
+				</table>
+			</div>
+		</div>
     </body>
 </html>
