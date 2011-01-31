@@ -20,9 +20,6 @@ class Service_Calendar
 	protected $_validDates; //months in range of now
 	protected $_nextMonth;
 	protected $_prevMonth;
-	protected $_calendarHeaderData;
-	protected $_calendarWeekdayData;
-	protected $_calendarMonthDayData;
 
 	/**
 	 * @param String $date
