@@ -3,8 +3,9 @@
 /**
  * Service_Calendar (using Zend_Date)
  *
- * @category
- * @package    Service_Calendar
+ * @author Arietis Software
+ * @copyright 2011 Arietis Software
+ * @license http://www.arietis-software.com/license/gnu/license.txt
  *
  */
 class Service_Calendar

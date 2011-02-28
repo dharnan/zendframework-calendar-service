@@ -1,4 +1,12 @@
 <?php
+/** 
+ * Calendar Controller
+ * 
+ * @author Arietis Software
+ * @copyright 2011 Arietis Software
+ * @license http://www.arietis-software.com/license/gnu/license.txt
+ *
+ */
 class CalendarController
 {
 	/**
