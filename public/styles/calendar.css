@@ -4,11 +4,11 @@
  * @license http://www.arietis-software.com/license/gnu/license.txt
  */
 
-div#calendarWrapper {
+#calendarWrapper {
 	margin: 0 auto;
 }
 
-div#calendarHeader {
+#calendarHeader {
 	width: 678px;
 	display: block;
 	text-align: center;
@@ -20,20 +20,21 @@ div#calendarHeader {
 	overflow: hidden;
 }
 
-div#calendarBody {
+#calendarBody {
 	float: left;
 	width: 698px;
 	border: 1px solid #CCCCCC;
 	overflow: hidden;
 }
 
-table#calendarTable {
+/* tables */
+#calendarTable {
 	width: 100%;
 	border-collapse: collapse;
 	overflow: hidden;
 }
 
-table#calendarTable td {
+#calendarTable td {
 	width: 94px;
 	height: 94px;
 	border: 1px solid #CCCCCC;
@@ -43,19 +44,19 @@ table#calendarTable td {
 	padding: 3px;
 }
 
-table#calendarTable td.first {/* cell at beginning of row */
+#calendarTable td.first {/* cell at beginning of row */
 	border-left: 0;
 }
 
-table#calendarTable td.last {/* cell at end of row */
+#calendarTable td.last {/* cell at end of row */
 	border-right: 0;
 }
 
-table#calendarTable td.bottom {/* cell in last row */
+#calendarTable td.bottom {/* cell in last row */
 	border-bottom: 0;
 }
 
-table#calendarTable tr.weekdays td {
+#calendarTable tr.weekdays td {
 	border-top: 0;
 	height: auto !important;
 	background: #F7F7F7;
@@ -65,23 +66,21 @@ table#calendarTable tr.weekdays td {
 	padding: 3px;
 }
 
-table#calendarTable tr.weekdays td.first {/* cell at beginning of row */
+#calendarTable tr.weekdays td.first {/* cell at beginning of row */
 	border-left: 0;
 }
 
-table#calendarTable tr.weekdays td.last {/* cell at end of row */
+#calendarTable tr.weekdays td.last {/* cell at end of row */
 	border-right: 0;
 }
 
-table#calendarTable td.today {/* cell that is today */
+#calendarTable td.today {/* cell that is today */
 	background: #F4F4F4;
 }
 
-/**
- * Month Scroller CSS (jCarousel)
- */
+/* month scroller css (jCarousel) */
 
-ul#monthCarousel li#selected-month {
+#monthCarousel li#selected-month {
 	font-weight: bold;
 	font-size: 13px;
 }
